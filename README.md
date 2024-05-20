@@ -2,4 +2,6 @@
 This is the repository for the LinkedIn Learning course `Introduction to SQL Using Google BigQuery`.
 
 
+![lil-thumbnail-BigQuery-and-Cloud-SQL.jpg]
+
 
