@@ -12,4 +12,7 @@ The shift to cloud platforms for analytics and machine learning is driven by the
 ## Instructions
  1. This repository only has a single main branch and should contain all updated files.
 
- 2. You can find 3 raw CSV files in the data/ folder which can be used with this course. Instructions to upload the data into BigQuery 
+ 2. You can find 3 raw CSV files in the data/ folder which can be used with this course. Instructions to upload the data into BigQuery.
+
+ ## Installing
+ 1. To use these exercise files, you must have an active Google Cloud Project which has BigQuery enabled.
