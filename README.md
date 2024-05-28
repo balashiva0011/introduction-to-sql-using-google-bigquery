@@ -8,3 +8,6 @@ This is the repository for the Coursera Learning course `Introduction to SQL Usi
 Here’s an overview of how cloud platforms are reshaping the landscape of analytics and machine learning:
 ## Google Big Query has been gaining steam in the market in recent years, and provides some game-changing technology in the modern data landscape.
 The shift to cloud platforms for analytics and machine learning is driven by the need for scalability, cost efficiency, and access to advanced tools. These platforms not only provide the necessary infrastructure and services but also enhance collaboration, security, and innovation. As more companies embrace cloud-based solutions, they are well-positioned to leverage data-driven insights and machine learning capabilities to drive business growth and success. 
+
+## Instructions
+ This repository only has a single main branch and should contain all updated files.
