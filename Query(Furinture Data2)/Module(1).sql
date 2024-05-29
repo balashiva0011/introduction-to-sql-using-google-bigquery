@@ -17,3 +17,12 @@ purchase_size
  FROM `furniture_transation.furniture_123` 
  order by  product_price desc
 
+sort product from  low to high price
+
+SELECT 
+product_color,
+product_price,
+purchase_size
+
+ FROM `furniture_transation.furniture_123` 
+ order by  product_price asc
