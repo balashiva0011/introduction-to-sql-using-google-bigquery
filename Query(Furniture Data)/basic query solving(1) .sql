@@ -1,5 +1,5 @@
 /* ======================
-    DATA- Employee
+    DATA- Furniture
     simple query to start
   =======================
 
@@ -10,14 +10,14 @@
 -- Show all rows and columns from the products table
 -- Include the unique GCP project ID in the query
 
-SELECT * FROM `project-143-415413.employee.employee_t`
+SELECT * FROM `project-143-415413.furniture_transation.furniture_123`
 
 -- The shortened form without the project ID
-SELECT * FROM `employee.employee_t`
+SELECT * FROM `furniture_transation.furniture_123`
 ;
 
 -- Only include product_id and product_name columns
 SELECT
   name,
   role
-FROM `employee.employee_t`;
+FROM `furniture_transation.furniture_123`;
