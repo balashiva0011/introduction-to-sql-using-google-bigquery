@@ -13,4 +13,11 @@
 SELECT * FROM `project-143-415413.employee.employee_t`
 
 -- The shortened form without the project ID
-SELECT * FROM 'employee.employee_t`;
+SELECT * FROM `employee.employee_t`
+;
+
+-- Only include product_id and product_name columns
+SELECT
+  name,
+  role
+FROM `employee.employee_t`;
