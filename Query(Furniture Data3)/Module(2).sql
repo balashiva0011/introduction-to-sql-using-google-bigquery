@@ -31,6 +31,14 @@ purchase_size
 FROM `furniture_transation.furniture_123` 
 where product !="lamp"
 
+-- != and <> can both be used
+SELECT  
+product,
+product_price,
+purchase_size
+FROM `furniture_transation.furniture_123` 
+where product <> "lamp"
+
 -- What is the most expensive product in the color category?
 
 SELECT  
