@@ -55,6 +55,15 @@ FROM `project-143-415413.furniture_transation.furniture_123`
 where product not IN ("fan","couch")
 order by customer_id
 
+-- Which products contain the word "couch"?
+SELECT  
+customer_id,
+product_price,
+product
+FROM `project-143-415413.furniture_transation.furniture_123` 
+where product like "%couch%"
+
+
 -- Which couch products have a good revenue number  between 20 and 30%?
 SELECT  
 customer_id,
