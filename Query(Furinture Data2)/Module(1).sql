@@ -42,5 +42,5 @@ SELECT
 product_color,
 product_price,
 purchase_size
-FROM `project-143-415413.furniture_transation.furniture_123` 
+FROM `furniture_transation.furniture_123` 
 order by product_color, product_price desc
