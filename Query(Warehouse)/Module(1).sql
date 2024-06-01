@@ -14,5 +14,5 @@ case
     when state like %MI% then 'MI'
     ELSE other
     end as no_state
- FROM `project-143-415413.warehouse.warehouse_3456` 
+ FROM `warehouse.warehouse_3456` 
  order by no_state
