@@ -20,7 +20,7 @@ warehouse_id,
 	FROM`warehouse.warehouse_3456` ) AS maximum_capacity
  FROM `warehouse.warehouse_3456` 
 
---scenario-2
+--Scenario-2
 
 --This is taken from other table 
 --using subquery with join's (inner joins)
@@ -45,5 +45,25 @@ FROM
 	ON 
 		station_id = start_station_id_str #**
 	ORDER BY 
-		number_of_rides DESC;
+		number_of_rides DESC
+
+    --Scenario-3
+
+  SELECT
+	station_id,
+	name
+FROM
+	bigquery-public-data.new_york.citibike_stations
+WHERE
+	station_id IN
+	(
+		SELECT
+			CAST(start_station_id AS STRING) AS start_station_id_str #**
+		FROM
+	    	bigquery-public-data.new_york.citibike_trips
+	  	WHERE
+			usertype = 'Subscriber'
+  	)
+    
+
 
