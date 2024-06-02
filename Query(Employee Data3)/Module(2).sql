@@ -16,4 +16,4 @@ FROM `project-143-415413.employee.departments_t` as department
 left join  
 `project-143-415413.employee.employee_t` as employee 
 on 
-employee.department_id = department.department_id
+employee.department_id = department.department_id.
