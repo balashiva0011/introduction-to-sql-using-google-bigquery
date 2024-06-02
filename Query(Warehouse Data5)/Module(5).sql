@@ -23,4 +23,17 @@ SELECT
 
  SELECT
    Round(AVG(purchase_price),1) AS avg_purchase_price
- FROM `project-143-415413.furniture_transation.furniture_123` 
+ FROM `furniture_transation.furniture_123` 
+
+--using round Function and calculations
+ SELECT 
+product,
+product_color,
+purchase_price,
+revenue,
+Round(
+  purchase_price*(1-revenue/100),2) as revenu_per
+
+ FROM `furniture_transation.furniture_123`
+ORDER by revenu_per  DESC
+LIMIT 5;
