@@ -17,7 +17,7 @@ SELECT
   RANK() OVER (
     ORDER BY SUM(employee_total) DESC
   ) AS sales_rank
-FROM `project-143-415413.warehouse.warehouse_3456`
+FROM `warehouse.warehouse_3456`
 GROUP BY warehouse_id
 QUALIFY sales_rank <= 5
 ORDER BY sales_rank;
