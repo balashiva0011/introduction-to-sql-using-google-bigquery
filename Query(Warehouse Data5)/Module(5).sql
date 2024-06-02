@@ -37,3 +37,17 @@ Round(
  FROM `furniture_transation.furniture_123`
 ORDER by revenu_per  DESC
 LIMIT 5;
+
+--using Round Function and STDDEV
+
+SELECT
+  ROUND(
+    AVG(purchase_price),
+    2
+  ) AS average_purchase_price,
+  ROUND(
+    STDDEV(purchase_price),
+    2
+  ) AS std_purchase_price
+
+ FROM `furniture_transation.furniture_123` 
