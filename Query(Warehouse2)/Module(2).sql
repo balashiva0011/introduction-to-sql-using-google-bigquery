@@ -35,13 +35,13 @@ FROM
 			CAST(start_station_id AS STRING) AS start_station_id_str, #**
 			count(*) as number_of_rides
 		FROM 
-      		bigquery-public-data.new_york.citibike_trips
+      		new_york.citibike_trips
 		GROUP BY 
 			CAST(start_station_id AS STRING) #**
 	)
 	AS station_num_trips----------------------------------------------------------------refer as table name 
 	INNER JOIN 
-		bigquery-public-data.new_york.citibike_stations 
+		new_york.citibike_stations 
 	ON 
 		station_id = start_station_id_str #**
 	ORDER BY 
@@ -53,17 +53,17 @@ FROM
 	station_id,
 	name
 FROM
-	bigquery-public-data.new_york.citibike_stations
+	new_york.citibike_stations
 WHERE
 	station_id IN
 	(
 		SELECT
 			CAST(start_station_id AS STRING) AS start_station_id_str #**
 		FROM
-	    	bigquery-public-data.new_york.citibike_trips
+	    	new_york.citibike_trips
 	  	WHERE
 			usertype = 'Subscriber'
   	)
-    
+
 
 
