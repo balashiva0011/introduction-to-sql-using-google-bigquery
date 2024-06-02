@@ -1,11 +1,12 @@
 /* ==========================
-    Chapter 2 - Movie 7
-    Calculation Functions(subquery)
+    Data-Trip and city 
+    sub query concept
   ===========================
 
 ---------------------------
   Lesson BigQuery Examples
 --------------------------- */
+
 
 --Scenario-4
 --create new field with exisitng fields
