@@ -29,7 +29,7 @@ case
  FROM `warehouse.warehouse_3456`
 
 
--- example as being takien from big query live with join function and case as well :
+-- example as being taken from big query live with join function and case as well :
 
  SELECT 
 Warehouse.warehouse_id,
