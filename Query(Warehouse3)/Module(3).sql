@@ -1,5 +1,5 @@
 /* ==========================
-    Data-Trip and city 
+    Data-new_york_citibike
     sub query concept
   ===========================
 
@@ -17,14 +17,14 @@ SELECT
     tripduration,
     (
         SELECT ROUND(AVG(tripduration),2)
-        FROM bigquery-public-data.new_york_citibike.citibike_trips
+        FROM new_york_citibike.citibike_trips
         WHERE start_station_id = outer_trips.start_station_id
     ) AS avg_duration_for_station,
     ROUND(tripduration - (
         SELECT AVG(tripduration)
-        FROM bigquery-public-data.new_york_citibike.citibike_trips
+        FROM new_york_citibike.citibike_trips
         WHERE start_station_id = outer_trips.start_station_id), 2) AS difference_from_avg
-FROM bigquery-public-data.new_york_citibike.citibike_trips AS outer_trips
+FROM new_york_citibike.citibike_trips AS outer_trips
 ORDER BY difference_from_avg DESC
 LIMIT 25;
 
@@ -34,7 +34,7 @@ LIMIT 25;
 SELECT
     tripduration,
     start_station_id
-FROM bigquery-public-data.new_york_citibike.citibike_trips
+FROM new_york_citibike.citibike_trips
 WHERE start_station_id IN
     (
         SELECT
@@ -44,7 +44,7 @@ WHERE start_station_id IN
             SELECT
                 start_station_id,
                 AVG(tripduration) AS avg_duration
-            FROM bigquery-public-data.new_york_citibike.citibike_trips
+            FROM new_york_citibike.citibike_trips
             GROUP BY start_station_id
         ) AS top_five
         ORDER BY avg_duration DESC
