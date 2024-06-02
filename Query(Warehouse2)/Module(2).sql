@@ -20,6 +20,8 @@ warehouse_id,
 	FROM`warehouse.warehouse_3456` ) AS maximum_capacity
  FROM `warehouse.warehouse_3456` 
 
+--scenario-2
+
 --This is taken from other table 
 --using subquery with join's (inner joins)
 
