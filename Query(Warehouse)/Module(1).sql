@@ -17,5 +17,4 @@ case
     end as no_state
  FROM `warehouse.warehouse_3456` 
  order by no_state
- --using this cotent
  
